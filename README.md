@@ -1,2 +1,1 @@
-# myProjectsRepo
-This is my projects repository
+DBMS project repository
