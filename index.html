@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload>
+    <div id = "first">
+        <a href="index.html" style="text-decoration:none ;"><h1 style="color:aliceblue;">Carz4All</h1></a>
+        <nav class="right"> 
+            <ul>
+                <li><a href="Brands.html">Popular Brands</a></li>
+                <li><a href="Bookings.html">Bookings</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Categories.html">Category</a></li>     
+            </ul> 
+        </nav>
+        <button id="signin">SIGN IN</button>    
+    </div>
+    <h1 class="firstHeading">Book your Dream Car now!</h1>
+    <div id="pageDiv">
+        <div id = "second">
+            <button class = "img-btn-prev" onclick="prev(document.getElementById('image').src)">&#10094</button>
+            <img id = "image" src="slavia.jpg">
+            <button class = "img-btn-next" onclick="next(document.getElementById('image').src)">&#10095</button>
+         </div>
+    </div>
+    <h1 class="firstHeading">Choose From Your Favourite brands</h1>
+    <div class="brands">
+        <div class="innerdiv">
+            <a href=""><img src="tata.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="maruti.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="hyundai.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="mahindra.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="honda.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="skoda.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="renault.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="volkswagen.jpg" alt="" class="link-img"></a>
+            </div>
+        <div class="innerdiv">
+            <a href=""><img src="MG.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="kia.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="mercedes.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="audi.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="land rover.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="jeep.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="bmw.jpg" alt="" class="link-img"></a>
+            <a href=""><img src="jaguar.jpg" alt="" class="link-img"></a>
+        </div>
+    </div>
+    <div class="loginDiv">
+        <div class="close-btn">&times;</div>
+        <form class="form">
+            <h2>Login</h2>
+            <div class="formelement">
+                <label for="username">Username:</label>
+                <br>
+                <input type="text", value="", placeholder="Enter email", name="username">
+            </div>
+    
+            <div class="formelement">
+                <Label for="password">Password:</Label>
+                <br>
+                <input type="password", value="", placeholder="Enter password", name="password">
+            </div>
+            <div class="formelement">
+                <span><label for="remember-me">Remember me</label><input type="checkbox", name="remember_me"></span>
+            <br>
+            <span><a href="">Forgot Password?</a></span>
+            <br>
+            <button id="signinBtn">Sign In</button>
+            <br>
+                <button class="loginBtn loginBtn--facebook">Login with Facebook</button>
+                <button class="loginBtn loginBtn--google">Login with Google</button>
+                <span>Not a member? <a href="">Sign up</a></span>   
+            </div>
+         </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+    
